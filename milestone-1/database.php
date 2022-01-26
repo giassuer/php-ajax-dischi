@@ -1,5 +1,5 @@
 <?php
-​
+
     $database = [
         [
             'title' => 'New Jersey',
@@ -44,5 +44,5 @@
             'genre' => 'Rock'
         ]
     ];
-​
+
 ?>
