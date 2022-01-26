@@ -25,7 +25,7 @@
                 <div class="dischi-container">
                         <div class="single-disco" v-for="(element, index) in dischi" :key="index">
                                 <div class="disco-img">
-                                    <img src="element.poster" alt="">
+                                    <img :src="element.poster" alt="">
                                 </div>
                                 <div class="disco-title white">{{element.title}}</div>
                                 <div class="disco-dati">
