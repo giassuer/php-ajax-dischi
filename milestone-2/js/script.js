@@ -7,7 +7,12 @@ const app = new Vue({
     },
     methods: {
         getDisc: function() {
-            axios.get('http://localhost:8888/php-ajax-dischi/milestone-2/server.php')
+            axios.get('http://localhost:8888/php-ajax-dischi/milestone-2/server.php',
+            {
+                props: {
+                    genre: this.selectedGenre
+                }
+            })
             .then((response) => {
                 this.dischi = response.data;
             });
